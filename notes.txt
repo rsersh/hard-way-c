@@ -1,0 +1,42 @@
+#	Notes from Learn C the Hard Way
+
+-  If an array is two-dimensional, you need a pointer to a pointer
+
+-  If a character string is going to cross multiple lines, add a \
+	at the end of the line and begin the rest of the string at
+	the beginning of the next line (otherwise, the extra spaces
+	will be added into the string).
+
+-  "The purpose of a pointer is to let you manually index into blocks
+	of memory when an array won't do it right...A pointer gives
+	you raw, direct access to a block of memory so you can work
+	with it."
+
+- use malloc for "memory allocate" 
+	pass to malloc the sizeof()
+
+- strdup()
+	string duplicate - like malloc, it also copies the original string
+	into the memory it creates
+
+- formatted I/O uses the % parameter
+	unformatted I/O is a byte stream (1 byte is read at a time)
+
+- open family of system calls are the unbuffered, direct calls to the kernel
+
+- fopen family are library functions in C
+
+- man ( -S 2 read ) 2 has information on system calls
+
+- man ( -S 3 fread ) 3 has information on library routines
+
+- some library functions have embedded system calls. (ex. scanf & printf
+	use read and write)	
+
+- use %p with printf to print pointers (or addresses)
+	to be used with void * (sizes of pointers to different types differ)
+
+- "If you didn't get it from malloc or a function that got it from malloc, 
+	then it's on the stack."
+
+

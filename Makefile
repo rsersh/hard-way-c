@@ -1,13 +1,16 @@
 CFLAGS=-Wall -g
 
-TARGETS= ex8 ex9 ex10 ex11 ex12 ex13 ex14
+#TARGETS= cl_parse ex18	
 
 all:
-	make $(TARGETS)
+	make ex19 
+
+ex19:	
+	make object.o 
 
 clean:
-	rm -f $(TARGETS) 
+	rm -f ex19 object.o
 
 hello:
 	@echo Hello, Rachel!
-	make ex14
+	make ex17
